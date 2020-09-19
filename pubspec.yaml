@@ -1,0 +1,20 @@
+name: pytorch_flutter
+description: A package to run PyTorch models on flutter
+version: 0.0.1
+author: Satyajit Ghana
+homepage: https://github.com/satyajitghana/pytorch_flutter
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
