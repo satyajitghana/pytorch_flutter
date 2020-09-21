@@ -11,10 +11,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  path_provider: ^1.6.16
+  path: ^1.7.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
-
+  plugin:
+    platforms:
+      android:
+        package: io.satyajit.pytorch_flutter
+        pluginClass: PytorchFlutterPlugin

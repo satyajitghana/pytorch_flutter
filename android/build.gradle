@@ -1,4 +1,4 @@
-group 'io.satyajit.pytorch_flutter.pytorch_flutter'
+group 'io.satyajit.pytorch_flutter'
 version '1.0'
 
 buildscript {
@@ -25,9 +25,19 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
     }
     lintOptions {
         disable 'InvalidPackage'
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '29.0.3'
+}
+
+dependencies {
+    implementation 'org.pytorch:pytorch_android:1.6.0'
+    implementation 'org.pytorch:pytorch_android_torchvision:1.6.0'
 }
