@@ -2,6 +2,10 @@
 
 A package to run PyTorch models on flutter
 
+>What is different in this package ?
+>
+>It uses the latest `pytorch_android:1.6.0` and `pytorch_android_torchvision:1.6.0` on Android. I still have to work on the iOS implementation.
+
 ## Example
 
 ```dart
