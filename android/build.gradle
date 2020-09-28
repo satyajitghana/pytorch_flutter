@@ -16,6 +16,9 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            url 'http://download.flutter.io'
+        }
     }
 }
 
@@ -25,7 +28,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 24
     }
     lintOptions {
         disable 'InvalidPackage'
@@ -40,4 +43,8 @@ android {
 dependencies {
     implementation 'org.pytorch:pytorch_android:1.6.0'
     implementation 'org.pytorch:pytorch_android_torchvision:1.6.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    api "io.flutter:flutter_embedding_debug:1.0.0-d6ee1499c27a156a797d9f1539ffb7892855c1d0"
+    implementation("com.google.guava:guava:29.0-android")
+    implementation 'org.jetbrains:annotations:15.0'
 }
